@@ -2,106 +2,142 @@
 <html>
 <head>
   <title>Mutcherla Jayani | DevOps Engineer</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f5f7fa;
+      margin: 0;
+      background-color: #0f172a;
+      color: #e2e8f0;
     }
 
-    h1 {
-      color: #2c3e50;
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #1e293b;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      color: #94a3b8;
+      margin-top: 10px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
     h2 {
-      color: #34495e;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
+      border-left: 5px solid #38bdf8;
+      padding-left: 10px;
+      color: #38bdf8;
     }
 
-    h3 {
-      color: #2c3e50;
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
     }
 
-    p {
-      line-height: 1.6;
+    .card:hover {
+      transform: translateY(-5px);
     }
 
     a {
-      color: #3498db;
+      color: #38bdf8;
       text-decoration: none;
+      font-weight: bold;
     }
 
     a:hover {
       text-decoration: underline;
     }
-</style>
+
+    .tools {
+      margin-top: 10px;
+      font-size: 0.9em;
+      color: #94a3b8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      background: #1e293b;
+      color: #94a3b8;
+    }
+  </style>
 </head>
-  
+
 <body>
 
-<h1>Mutcherla Jayani</h1>
-<p>DevOps Engineer | AWS | Docker | CI/CD</p>
+<header>
+  <h1>Mutcherla Jayani</h1>
+  <p>DevOps Engineer | AWS | Docker | CI/CD</p>
+</header>
 
-<h2>About Me</h2>
-<p>I’m a DevOps enthusiast with hands-on experience in AWS, Docker, CI/CD, and Terraform. Over the last 6 months, I’ve worked on building and deploying applications and improving automation. 
-I also completed a 2-month internship where I worked on real-time DevOps tasks. 
-I’m now looking for an opportunity to grow as a DevOps Engineer.</p>
+<section>
+  <h2>About Me</h2>
+  <p>
+    I’m a DevOps enthusiast with hands-on experience in AWS, Docker, CI/CD, and Terraform. 
+    Over the last 6 months, I’ve worked on building and deploying applications and improving automation. 
+    I also completed a 2-month internship where I worked on real-time DevOps tasks. 
+    I’m now looking for an opportunity to grow as a DevOps Engineer.
+  </p>
+</section>
 
-<h2>Projects</h2>
+<section>
+  <h2>Projects</h2>
 
-<h3>Strapi Deployment using ECS, Terraform & CI/CD</h3>
-<p>
-Designed and deployed a Strapi application using AWS ECS with Infrastructure as Code (Terraform). 
-Implemented a CI/CD pipeline to automate build and deployment. 
-This project demonstrates end-to-end DevOps workflow including provisioning, containerization, and deployment.
-</p>
+  <div class="card">
+    <h3>Strapi Deployment using ECS, Terraform & CI/CD</h3>
+    <p>
+      Designed and deployed a Strapi application using AWS ECS with Terraform. 
+      Implemented a CI/CD pipeline to automate build and deployment.
+    </p>
+    <p class="tools">Tools: AWS ECS, Terraform, Docker, GitHub Actions</p>
+    <a href="https://github.com/Jayani22/strapi-ecs-terraform-cicd" target="_blank">View Project →</a>
+  </div>
 
-<p>
-Tools used: AWS ECS, Terraform, Docker, GitHub Actions
-</p>
+  <div class="card">
+    <h3>Blue-Green Deployment on AWS ECS</h3>
+    <p>
+      Implemented blue-green deployment strategy to achieve zero-downtime releases. 
+      Managed traffic switching between environments.
+    </p>
+    <p class="tools">Tools: AWS ECS, Terraform, Docker, Load Balancer</p>
+    <a href="https://github.com/Jayani22/strapi-bluegreen.git" target="_blank">View Project →</a>
+  </div>
 
-<p>
-GitHub: <a href="https://github.com/Jayani22/strapi-ecs-terraform-cicd" target="_blank">
-View Project
-</a>
-</p>
-  
-<h3>Blue-Green Deployment on AWS ECS</h3>
-<p>
-Implemented a blue-green deployment strategy for a Strapi application on AWS ECS to achieve zero-downtime deployments. 
-Used Terraform to provision infrastructure and configured traffic switching between environments to ensure safe and reliable releases.
-</p>
+  <div class="card">
+    <h3>Infrastructure Monitoring with Prometheus & Grafana</h3>
+    <p>
+      Set up monitoring system to track CPU, memory, and system metrics. 
+      Built dashboards and alerts for real-time visibility.
+    </p>
+    <p class="tools">Tools: Prometheus, Grafana, Node Exporter</p>
+    <a href="https://github.com/Jayani22/devops-infra-monitoring.git" target="_blank">View Project →</a>
+  </div>
 
-<p>
-Tools used: AWS ECS, Terraform, Docker, Load Balancer
-</p>
+</section>
 
-<p>
-GitHub: <a href="https://github.com/Jayani22/strapi-bluegreen.git" target="_blank">
-View Project
-</a>
-</p>
+<section>
+  <h2>Contact</h2>
+  <p>Email: mutcherlajayani@gmail.com</p>
+</section>
 
-<h3>Infrastructure Monitoring with Prometheus & Grafana</h3>
-<p>
-Implemented monitoring and observability for infrastructure using Prometheus and Grafana. 
-Collected system metrics such as CPU, memory, and network usage, and visualized them using dashboards. 
-Configured alerts to detect and respond to system issues in real time.
-</p>
-
-<p>
-Tools used: Prometheus, Grafana, Node Exporter, Linux
-</p>
-
-<p>
-GitHub: <a href="https://github.com/Jayani22/devops-infra-monitoring.git" target="_blank">
-View Project
-</a>
-</p>
-
-<h2>Contact</h2>
-<p>Email: mutcherlajayani@gmail.com</p>
+<footer>
+  <p>© 2026 Mutcherla Jayani</p>
+</footer>
 
 </body>
 </html>
