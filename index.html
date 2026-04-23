@@ -37,7 +37,7 @@ header p {
 .icons a {
   margin: 0 10px;
   color: #0ea5e9;
-  font-size: 1.3em;
+  font-size: 1.2em;
   transition: 0.3s;
 }
 
@@ -109,23 +109,29 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
-/* Resume Button */
-.resume-btn {
-  display: inline-block;
+    
+.header-actions {
   margin-top: 20px;
-  padding: 10px 20px;
-  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.resume-btn {
+  padding: 8px 18px;
+  background: #0ea5e9;
   color: white;
-  border-radius: 25px;
+  border-radius: 20px;
   font-weight: 600;
-  font-size: 0.95em;
+  font-size: 0.9em;
   transition: all 0.3s ease;
 }
 
 .resume-btn:hover {
+  background: #0284c7;
   transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
 /* Footer */
@@ -210,12 +216,17 @@ html {
   <p>DevOps Engineer focused on automation, cloud infrastructure, and scalable deployments</p>
   <p><span id="typing"></span></p>
 
-  <div class="icons">
-    <a href="https://github.com/Jayani22" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://linkedin.com/in/mutcherla-jayani" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://medium.com/@mutcherlajayani" target="_blank"><i class="fab fa-medium"></i></a>
-    <a href="DevOps_Resume_Jayani.pdf" download class="resume-btn"> Download Resume </a>
-  </div>
+  <div class="header-actions">
+    <div class="icons">
+      <a href="https://github.com/Jayani22" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/mutcherla-jayani" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://medium.com/@mutcherlajayani" target="_blank"><i class="fab fa-medium"></i></a>
+      <a href="DevOps_Resume_Jayani.pdf" download class="resume-btn"> Download Resume </a>
+    </div>
+    <a href="DevOps_Resume_Jayani.pdf" download class="resume-btn">
+      Resume
+    </a>
+ </div>
 
 
 </header>
