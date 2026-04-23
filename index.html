@@ -5,17 +5,17 @@
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
   <br>
-  <a href="DevOps_Resume_Jayani.pdf" download class="resume-btn">Download Resume</a>
-
+  <a href="DevOps_Resume_Jayani.pdf" download class="resume-btn">
+    Download Resume
+  </a>
   <style>
     body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f8fafc;
-  color: #1e293b;
-}
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f8fafc;
+      color: #1e293b;
+    }
 
 /* Header */
 header {
@@ -186,40 +186,7 @@ html {
 }
   </style>
 </head>
-<script>
-const texts = [
-  "DevOps Engineer",
-  "AWS | Docker | CI/CD",
-  "Building Scalable Systems",
-  "Automation & Cloud Enthusiast"
-];
 
-let count = 0;
-let index = 0;
-let currentText = "";
-let letter = "";
-
-(function type() {
-  if (count === texts.length) {
-    count = 0;
-  }
-
-  currentText = texts[count];
-  letter = currentText.slice(0, ++index);
-
-  document.getElementById("typing").textContent = letter;
-
-  if (letter.length === currentText.length) {
-    setTimeout(() => {
-      index = 0;
-      count++;
-      type();
-    }, 1500);
-  } else {
-    setTimeout(type, 60);
-  }
-})();
-</script>
 <body>
 <nav>
   <a href="#about">About</a>
@@ -317,13 +284,66 @@ let letter = "";
   </div>
 
 </section>
+<section id="contact">
+  <h2>Contact</h2>
 
-<section>
-  
+  <div class="card">
+    <p>Email: 
+      <a href="mailto:mutcherlajayani@gmail.com">
+        mutcherlajayani@gmail.com
+      </a>
+    </p>
+
+    <p>GitHub: 
+      <a href="https://github.com/Jayani22" target="_blank">
+        Jayani22
+      </a>
+    </p>
+
+    <p>LinkedIn: 
+      <a href="https://linkedin.com/in/mutcherla-jayani" target="_blank">
+        View Profile
+      </a>
+    </p>
+  </div>
 </section>
 <footer>
   <p>© 2026 Mutcherla Jayani</p>
 </footer>
+  <script>
+const texts = [
+  "DevOps Engineer",
+  "AWS | Docker | CI/CD",
+  "Building Scalable Systems",
+  "Automation & Cloud Enthusiast"
+];
+
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function type() {
+  if (count === texts.length) {
+    count = 0;
+  }
+
+  currentText = texts[count];
+  letter = currentText.slice(0, ++index);
+
+  document.getElementById("typing").textContent = letter;
+
+  if (letter.length === currentText.length) {
+    setTimeout(() => {
+      index = 0;
+      count++;
+      type();
+    }, 1500);
+  } else {
+    setTimeout(type, 60);
+  }
+})();
+</script>
 
 </body>
 </html>
