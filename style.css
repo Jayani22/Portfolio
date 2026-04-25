@@ -66,14 +66,19 @@
 /* Resume button */
 .resume-btn {
   padding: 10px 22px;
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  color: #ffffff;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark)) !important;
+  color: #ffffff !important;
   border-radius: 25px;
   font-weight: 600;
   font-size: 0.9em;
   transition: all 0.3s ease;
   display: inline-block;
-  opacity: 1;
+  text-decoration: none;
+  border: none;
+}
+
+a.resume-btn {
+  color: #ffffff !important;
 }
 
 .resume-btn:hover {
