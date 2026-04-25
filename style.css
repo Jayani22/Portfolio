@@ -29,6 +29,7 @@
   text-align: center;
   padding: 80px 20px 60px;
   background: linear-gradient(180deg, #ffffff, #f1f5f9);
+  opacity: 1 !important;
 }
 
 /* Name */
@@ -36,6 +37,10 @@
   font-size: 2.8em;
   margin-bottom: 10px;
   color: #1e293b;
+}
+
+.hero .resume-btn {
+  opacity: 1 !important;
 }
 
 /* Tagline */
@@ -465,8 +470,4 @@ body.dark .resume-btn {
   background: linear-gradient(135deg, #2dd4bf, #14b8a6);
   color: #ffffff;
 }
-
-.hero {
-  border-bottom: 1px solid #e2e8f0;
-}
-  </style>
+</style>
