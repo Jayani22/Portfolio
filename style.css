@@ -70,16 +70,16 @@
 
 /* Resume button */
 .resume-btn {
-  padding: 10px 22px;
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark)) !important;
-  color: #ffffff !important;
-  border-radius: 25px;
+  padding: 12px 26px;
+  background: #ccfbf1;
+  color: #0f766e;
+  border-radius: 30px;
   font-weight: 600;
-  font-size: 0.9em;
+  font-size: 0.95em;
   transition: all 0.3s ease;
   display: inline-block;
   text-decoration: none;
-  border: none;
+  border: 1px solid #99f6e4;
   opacity: 1 !important;
   visibility: visible !important;
   pointer-events: auto !important;
@@ -91,8 +91,9 @@ a.resume-btn {
 
 .resume-btn:hover {
   transform: translateY(-2px);
+  background: #99f6eb;
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-  color: #ffffff;
+  color: #064e3b;
 }
 
 /* Icons */
