@@ -424,19 +424,24 @@ nav {
 
 /* DARK MODE */
 body.dark {
-  background: #0f172a;
+  background: #0b1220; /* deep navy */
   color: #e2e8f0;
 }
 
+body.dark .hero {
+  background: linear-gradient(180deg, #0b1220, #0f172a);
+}
+    
 /* Cards */
 body.dark .card {
-  background: #1e293b;
-  color: #e2e8f0;
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  box-shadow: none;
 }
 
 /* Navbar */
 body.dark nav {
-  background: #1e293b;
+  background: rgba(15, 23, 42, 0.9);
 }
 
 /* Links */
@@ -455,9 +460,25 @@ body.dark .skills span {
   color: #e0f2fe;
 }
 
+/* Headings */
+body.dark h1,
+body.dark h2,
+body.dark h3 {
+  color: #38bdf8;
+}
+    
+/* Links */
+body.dark a {
+  color: #38bdf8;
+}    
 /* Footer */
 body.dark footer {
-  background: #1e293b;
+  background: #0f172a;
+  border-top: 1px solid #1e293b;
+}
+/* Icons */
+body.dark .icons a {
+  color: #38bdf8;
 }
   </style>
 </head>
